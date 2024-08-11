@@ -4,6 +4,8 @@ html, body{
     margin: 0;
     padding: 0;
     height: 100%;
+    font-weight: 200;
+    cursor: url("../images/black_cursor.png"), auto;
 }
 
 body { 
@@ -16,14 +18,36 @@ body {
 main {
     border: solid black 1px;
     display: grid;
-    grid-template-columns: minmax(200px, 600px);
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "nav"
                          "header"
-                         "skills" ;
+                         "." ;
     width: 100%;
     height: 100%;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
     justify-content: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-size: 1.5rem;
+    margin: 1.25rem 2rem;
+}
+
+nav li:hover {
+    color: gray;
 }
 
 header {
@@ -36,14 +60,13 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 3rem;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 3.5rem;
     font-weight: 200;
 }
 
 header h2 {
     margin: 0;
     font-size: 1.5rem;
-    font-family: 'Open Sans', sans-serif;
+    color: gray;
     font-weight: 200;
 }
