@@ -7,67 +7,43 @@ html, body{
 }
 
 body { 
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: ". header ."
-                         ". main ."
-                         ". main ." ;
     height: 100%;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
 }
 
-
-
+main {
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: minmax(200px, 600px);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "nav"
+                         "header"
+                         "skills" ;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
 
 header {
     grid-area: header;
     display: flex;
     flex-flow: nowrap column;
-}
-
-nav {
-    margin-top: 1rem;
-    width: 100%;
-    height: 4rem;
-    border: 1px black solid;
-    border-radius: 1rem;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
+header h1 {
     margin: 0;
-    width: 100%;
-}
-
-nav ul li {
-    margin: 0;
-    text-align: center;
-    flex: 1;
-}
-
-main {
-    width: 100%;
-    grid-area: main;
-    display: flex;
-    flex-flow: column nowrap;
-    text-align: center ;
-    align-items: center;
-}
-
-main h1 {
-    font-weight: 200;
     font-size: 3rem;
-    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
 }
 
-main h2{
+header h2 {
     margin: 0;
     font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 200;
 }
