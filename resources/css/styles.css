@@ -1,0 +1,31 @@
+html {
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+body { 
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: ". nav ."
+                         ". main ."
+                         ". main ." ;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center ;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 1rem;
+    font-weight: 200;
+}
