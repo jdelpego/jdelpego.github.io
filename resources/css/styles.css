@@ -161,21 +161,3 @@ article li {
     color: #333333;
     text-align: center;
 }
-
-@media (max-width: 500px) {
-    .skill-box {
-        width: 25rem;
-        height: 20rem;
-    }
-    .skill-icon {
-        max-width: 10rem;
-        max-height: 10rem;
-        margin-bottom: .5rem;
-        object-fit: contain;
-    }
-    .skill-name {
-        font-size: 2rem;
-        color: #333333;
-        text-align: center;
-    }
-}
