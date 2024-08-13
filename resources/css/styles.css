@@ -91,3 +91,91 @@ a {
 a:hover img {
     opacity: 0.5;
 }
+
+article {
+    width: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    font-weight: 200;
+}
+
+p {
+    margin: 0;
+}
+
+
+article ul {
+    padding: 0;
+    padding-left: 1rem;
+    margin: .25rem 0;
+    list-style-position: outside;
+    display: grid;
+    justify-content: center;
+}
+
+article li {
+    font-size: .75rem;
+    margin-left: 0;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.skill-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: .75rem;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, 0.2);
+    width: 7rem;
+    transition: transform 0.2s ease;
+    flex-direction: column;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+}
+
+.skill-icon {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    margin-bottom: .5rem;
+    object-fit: contain;
+}
+
+.skill-name {
+    font-size: 1rem;
+    color: #333333;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .skill-box {
+        width: 25rem;
+        height: 20rem;
+    }
+    .skill-icon {
+        max-width: 10rem;
+        max-height: 10rem;
+        margin-bottom: .5rem;
+        object-fit: contain;
+    }
+    .skill-name {
+        font-size: 2rem;
+        color: #333333;
+        text-align: center;
+    }
+}
